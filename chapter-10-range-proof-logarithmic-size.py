@@ -35,11 +35,10 @@ Q = (FQ(115730051465647852081033711788352304119078371765838329484261621698599270
 # EC addition example: add(multiply(G, 42), multiply(G, 100))
 
 # remember to do all arithmetic modulo p
-def commit(a, sL, b, sR, v, alpha, beta, gamma):
+def commit(a, sL, b, sR, v, alpha, beta):
     A = add_points(vector_commit(G, a), vector_commit(H, b), multiply(B, alpha))
     S = add_points(vector_commit(G, sL), vector_commit(H, sR), multiply(B, beta))
-    V = add(multiply(Q, v), multiply(B, gamma))
-    return (A, S, V)
+    return (A, S)
 
 def commitT1_and_T2(t1, t2, tau_1, tau_2):
     T1 = add(multiply(Q, t1), multiply(B, tau_1))
@@ -113,7 +112,7 @@ gamma = random_element()
 tau_1 = random_element()
 tau_2 = random_element()
 
-A, S, V = commit(aL, sL, aR, sR, v, alpha, beta, gamma)
+A, S = commit(aL, sL, aR, sR, v, alpha, beta)
 
 ## step 2: Verifier picks y, z which the prover will use to combine the three inner products into a single one.
 y = random_element()
