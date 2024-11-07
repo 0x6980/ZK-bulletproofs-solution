@@ -87,7 +87,7 @@ u = random_element()
 ## step 5: Prover evaluates l(u), r(u), t(u) and creates evaluation proofs
 l_u = evaluate(aL, sL, 0, u)
 r_u = evaluate(np.multiply(yn, aR), np.multiply(yn, sR), 0, u)
-t_u = np.inner(np.array(l_u), np.array(r_u)) % p
+t_u = evaluate(0, t1, t2, u)
 
 pi_lr = (alpha + beta * u) % p
 pi_t = (tau_1 * u + tau_2 * u**2) % p
