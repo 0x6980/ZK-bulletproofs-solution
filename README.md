@@ -1,6 +1,6 @@
 # Bulletproofs — CTF Solutions and Implementations
 
-This repository contains my solutions and technical explorations related to the Bulletproofs challenges from RareSkills.
+This repository contains my solutions and technical explorations related to the Bulletproofs challenges from RareSkills zk-book.
 
 The work is connected to my study of Bulletproofs, inner-product arguments, and zero-knowledge range proofs.
 
@@ -10,14 +10,13 @@ Bulletproofs are zero-knowledge arguments that enable proofs of statements such 
 
 I worked through the RareSkills Bulletproofs challenges, studying the mathematical structure of the protocol and translating the challenge requirements into code.
 
-**Achievement:** Winner of the RareSkills Bulletproofs CTF.
+**Achievement:** Winner of the RareSkills Bulletproofs [CTF](https://x.com/RareSkills_io/status/1853090601287532964).
 
 ## What You'll Find Here
 
 - Solutions to the repository's Bulletproofs exercises.
 - Code exploring the underlying protocol operations.
 - Experiments and implementation details developed while solving the challenges.
-- Winner of the RareSkills Bulletproofs [CTF](https://x.com/RareSkills_io/status/1853090601287532964).
 
 > The exact scope of each implementation and its limitations should be checked against the corresponding source files.
 
